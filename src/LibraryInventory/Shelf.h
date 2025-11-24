@@ -9,7 +9,7 @@ class Shelf {
                 Compartment findCompartment(int index) const;
 
                 Compartment &operator[](int index);
-                friend std::ostream& operator<<(std::ostream &os, Shelf& shelf);
+                friend std::ostream& operator<<(std::ostream &os, const Shelf& shelf);
 
         private:
                 Compartment compartments[15];

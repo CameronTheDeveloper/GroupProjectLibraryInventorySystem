@@ -16,4 +16,10 @@ class CompartmentEmptyException : public std::runtime_error {
                     : std::runtime_error(message) {}
 };
 
+class ShelfNotFoundException : public std::runtime_error {
+        public:
+                ShelfNotFoundException(const std::string &message)
+                    : std::runtime_error(message) {}
+};
+
 #endif
