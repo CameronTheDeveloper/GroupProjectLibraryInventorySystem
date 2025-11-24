@@ -15,8 +15,7 @@ void Movie::setMainActors(const std::vector<std::string> &aActors) {
 }
 
 void Movie::print() const {
-        Item::print();
-        cout << "Tile: " << title << "\nDirector: " << director
+        cout << "\nTile: " << title << "\nDirector: " << director
              << "\nMain Actors: ";
 
         for (int i = 0; i < mainActors.size(); i++) {

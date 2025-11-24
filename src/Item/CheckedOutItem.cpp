@@ -28,19 +28,14 @@ void CheckedOutItem::setOriginalCompartment(int compartment) {
         originalCompartment = compartment;
 }
 void CheckedOutItem::setNameOfOwner(const std::string &owner) {
-        if (owner.empty())
-                throw std::runtime_error(
-                    "CheckedOutItem: owner name cannot be empty.");
         nameOfOwner = owner;
 }
 void CheckedOutItem::setDueDate(const std::string &date) {
-        if (date.empty())
-                throw std::runtime_error(
-                    "CheckedOutItem: due date cannot be empty.");
         dueDate = date;
 }
-std::ostream &operator<<(std::ostream &os, CheckedOutItem &checkedOutItem) {
+std::ostream &operator<<(std::ostream &os, const CheckedOutItem& checkedOutItem) {
         os << "Item: " << checkedOutItem.getItem()->getName()
+           << ", Description: " << checkedOutItem.getItem()->getDescription()
            << ", Owner: " << checkedOutItem.getNameOfOwner()
            << ", Due: " << checkedOutItem.getDueDate();
         return os;

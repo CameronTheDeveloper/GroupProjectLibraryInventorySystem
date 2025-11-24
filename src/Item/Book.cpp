@@ -15,8 +15,7 @@ void Book::setCopyrightDate(const std::string &aCopyrightDate) {
 }
 
 void Book::print() const {
-        Item::print();
-        cout << "Title: " << title << "\nAuthor: " << author
+        cout << "\nTitle: " << title << "\nAuthor: " << author
              << "\nCopyright Date: " << copyrightDate << endl;
 }
 

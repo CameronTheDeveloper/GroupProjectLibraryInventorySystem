@@ -13,8 +13,7 @@ void Magazine::setTitleOfMain(const std::string &aTitle) {
 }
 
 void Magazine::print() const {
-        Item::print();
-        cout << "Edition: " << edition << "\nTitle of Magazine: " << titleOfMain
+        cout << "\nEdition: " << edition << "\nTitle of Magazine: " << titleOfMain
              << endl;
 }
 std::ostream &operator<<(std::ostream &os, Magazine &magazine) {

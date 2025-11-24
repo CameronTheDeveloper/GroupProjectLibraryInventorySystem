@@ -21,7 +21,7 @@ int main() {
         book1->setTitle("Maze Runner");
         book1->setAuthor("James Dashner");
         book1->setCopyrightDate("2009");
-        library.addItem(book1, 1, 1);
+        library.addItem(book1, 0, 1);
 
         Book *book2 = new Book();
         book2->setName("Book B");
@@ -34,9 +34,20 @@ int main() {
 
         library.printStorage();
 
-        CheckedOutItem checkedOut1 = library.checkOut(1, 1);
+
+        CheckedOutItem& checkedOut1 = library.checkOut(0, 1);
         checkedOut1.setNameOfOwner("Jaden");
         checkedOut1.setDueDate("11/25/2025");
+        library.printStorage();
+        library.printCheckedOut();
+
+
+        library.checkIn(checkedOut1);
+        library.printStorage();
+        library.printCheckedOut();
+
+
+        library.swap(0, 1, 2, 0);
         library.printStorage();
         library.printCheckedOut();
 

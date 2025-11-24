@@ -11,9 +11,14 @@ Compartment& Shelf::operator[](size_t index) {
 
 std::ostream& operator<<(std::ostream& os, const Shelf& shelf) {
         for (size_t i = 0; i < std::size(shelf.compartments); ++i) {
-                os << "Compartment " << i << ": ";
+                os << "Compartment " << (i + 1) << ": ";
                 if (shelf.compartments[i].isEmpty()) os << "Empty";
-                else os << *(shelf.compartments[i].getStoredItem());                    // call Item::operator<< with the item stored at compartment i
+                else {
+                        os << (shelf.compartments[i]
+                                    .getStoredItem()); // call Item::operator<<
+                                                       // with the item stored
+                                                       // at compartment i
+                }
                 os << "\n";
         }
         return os;

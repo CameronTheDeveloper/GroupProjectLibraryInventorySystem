@@ -2,6 +2,7 @@
 
 void Library::printCheckedOut() const
 {
+        std::cout << "----------\nChecked Out\n----------\n\n";
         for (const CheckedOutItem& item : checkedOutItems)
         {
                 std::cout << item << "\n";
@@ -10,15 +11,11 @@ void Library::printCheckedOut() const
 
 void Library::printStorage() const
 {
-        for (const Shelf& shelf : shelves)
+        std::cout << "----------\nLibrary\n----------\n\n";
+        for (int i = 0; i < 10; ++i)
         {
-                std::cout << shelf << "\n";
+                std::cout << "Shelf " << (i + 1) << ":\n" << shelves[i] << "\n";
         }
-}
-
-void Library::addShelf(const Shelf& shelf)
-{
-        shelves.emplace_back(shelf);
 }
 
 void Library::addItem(Item *item, const int shelfIndex, const int compartmentIndex)
@@ -85,12 +82,28 @@ CheckedOutItem& Library::checkOut(const int shelfIndex, const int compartmentInd
         checkedOutItem.setOriginalShelf(shelfIndex);
         checkedOutItem.setOriginalCompartment(compartmentIndex);
         checkedOutItems.push_back(checkedOutItem);
-        return checkedOutItem;
+        return checkedOutItems[checkedOutItems.size()-1];
+}
+
+void Library::checkIn(CheckedOutItem& checkedOutItem)
+{
+        int shelfIndex  = checkedOutItem.getOriginalShelf();
+        int compartmentIndex = checkedOutItem.getOriginalCompartment();
+
+        (*this)[shelfIndex][compartmentIndex].addItem(checkedOutItem);
+        for (int i = 0; i < checkedOutItems.size(); ++i)
+        {
+                if (checkedOutItems[i].getItem()->getId() == checkedOutItem.getItem()->getId())
+                {
+                        checkedOutItems.erase(checkedOutItems.begin() + i);
+                        return;
+                }
+        }
 }
 
 Shelf& Library::operator[](int index)
 {
-        if (index < 0 || index >= shelves.size())
+        if (index < 0 || index >= 100)
         {
                 throw ShelfNotFoundException("Shelf does not exist.");
         }

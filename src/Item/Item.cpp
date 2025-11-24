@@ -24,9 +24,9 @@ void Item::setId(int id) { this->id = id; }
 
 // This function needs to be implemented to use the friend declaration.
 // It delegates output to the pure virtual print() method for polymorphism.
-std::ostream &operator<<(std::ostream &os, const Item &item) {
+std::ostream &operator<<(std::ostream &os, const Item *item) {
         // The print() method handles the specific formatting for derived
         // classes.
-        item.print();
+        item->print();
         return os;
 }
