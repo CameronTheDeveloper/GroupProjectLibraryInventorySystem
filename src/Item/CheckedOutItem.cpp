@@ -1,10 +1,10 @@
 #include "CheckedOutItem.h"
 #include <stdexcept>
-Item &CheckedOutItem::getItem() const {
+Item *CheckedOutItem::getItem() const {
         if (item == nullptr)
                 throw std::runtime_error(
                     "CheckedOutItem: item pointer is null.");
-        return *item;
+        return item;
 }
 int CheckedOutItem::getOriginalShelf() const { return originalShelf; }
 int CheckedOutItem::getOriginalCompartment() const {
@@ -12,8 +12,8 @@ int CheckedOutItem::getOriginalCompartment() const {
 }
 std::string CheckedOutItem::getNameOfOwner() const { return nameOfOwner; }
 std::string CheckedOutItem::getDueDate() const { return dueDate; }
-void CheckedOutItem::setItem(const Item &newItem) {
-        item = const_cast<Item *>(&newItem);
+void CheckedOutItem::setItem(Item *newItem) {
+        item = newItem;
 }
 void CheckedOutItem::setOriginalShelf(int shelf) {
         if (shelf < 0)
@@ -40,7 +40,7 @@ void CheckedOutItem::setDueDate(const std::string &date) {
         dueDate = date;
 }
 std::ostream &operator<<(std::ostream &os, CheckedOutItem &checkedOutItem) {
-        os << "Item: " << checkedOutItem.getItem().getName()
+        os << "Item: " << checkedOutItem.getItem()->getName()
            << ", Owner: " << checkedOutItem.getNameOfOwner()
            << ", Due: " << checkedOutItem.getDueDate();
         return os;

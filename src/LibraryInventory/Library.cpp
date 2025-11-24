@@ -71,6 +71,23 @@ void Library::swap(int itemOneShelfIndex, int itemOneCompIndex,
         compartment2->addItem(item1);
 }
 
+CheckedOutItem& Library::checkOut(const int shelfIndex, const int compartmentIndex)
+{
+        CheckedOutItem checkedOutItem;
+        try {
+                checkedOutItem.setItem((*this)[shelfIndex][compartmentIndex].removeItem());
+        }
+        catch (std::exception e)
+        {
+                std::cout << "Error checking out item.";
+                return checkedOutItem;
+        }
+        checkedOutItem.setOriginalShelf(shelfIndex);
+        checkedOutItem.setOriginalCompartment(compartmentIndex);
+        checkedOutItems.push_back(checkedOutItem);
+        return checkedOutItem;
+}
+
 Shelf& Library::operator[](int index)
 {
         if (index < 0 || index >= shelves.size())

@@ -15,6 +15,8 @@ class Library
                 void addItem(Item *item, const int shelfIndex, const int compartmentIndex);
                 void swap(int itemOneShelfIndex, int itemOneCompIndex,
                           int itemTwoShelfIndex, int itemTwoCompIndex);
+                CheckedOutItem &checkOut(const int shelfIndex,
+                                         const int compartmentIndex);
                 Shelf &operator[](int index);
 
         private:

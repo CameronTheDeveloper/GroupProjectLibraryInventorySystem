@@ -6,14 +6,14 @@
 class CheckedOutItem {
         public:
                 // Getters
-                Item& getItem() const;
+                Item* getItem() const;
                 int getOriginalShelf() const;
                 int getOriginalCompartment() const;
                 std::string getNameOfOwner() const;
                 std::string getDueDate() const;
 
                 // Setters
-                void setItem(const Item &newItem);
+                void setItem(Item *newItem);
                 void setOriginalShelf(int shelf);
                 void setOriginalCompartment(int compartment);
                 void setNameOfOwner(const std::string &owner);

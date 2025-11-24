@@ -14,6 +14,32 @@ int main() {
 
         Library library;
 
+        Book *book1 = new Book();
+        book1->setName("Book A");
+        book1->setDescription("Book A Description");
+        book1->setId(1);
+        book1->setTitle("Maze Runner");
+        book1->setAuthor("James Dashner");
+        book1->setCopyrightDate("2009");
+        library.addItem(book1, 1, 1);
+
+        Book *book2 = new Book();
+        book2->setName("Book B");
+        book2->setDescription("Book B Description");
+        book2->setId(2);
+        book2->setTitle("Hunger Games");
+        book2->setAuthor("Suzanne Collins");
+        book2->setCopyrightDate("2008");
+        library.addItem(book2, 2, 0);
+
+        library.printStorage();
+
+        CheckedOutItem checkedOut1 = library.checkOut(1, 1);
+        checkedOut1.setNameOfOwner("Jaden");
+        checkedOut1.setDueDate("11/25/2025");
+        library.printStorage();
+        library.printCheckedOut();
+
 
 
 
