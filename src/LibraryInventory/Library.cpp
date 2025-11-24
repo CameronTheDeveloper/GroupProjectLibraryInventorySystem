@@ -1,5 +1,15 @@
 #include "Library.h"
 
+Library::Library()
+{
+       shelves.resize(15);
+}
+
+Library::Library(int size)
+{
+        shelves.resize(size);
+}
+
 void Library::printCheckedOut() const
 {
         std::cout << "----------\nChecked Out\n----------\n\n";
@@ -12,7 +22,7 @@ void Library::printCheckedOut() const
 void Library::printStorage() const
 {
         std::cout << "----------\nLibrary\n----------\n\n";
-        for (int i = 0; i < 10; ++i)
+        for (int i = 0; i < shelves.size(); ++i)
         {
                 std::cout << "Shelf " << (i + 1) << ":\n" << shelves[i] << "\n";
         }

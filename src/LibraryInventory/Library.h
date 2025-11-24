@@ -9,6 +9,8 @@
 class Library
 {
         public:
+                Library();
+                Library(int size);
                 void printCheckedOut() const;
                 void printStorage() const;
                 void addItem(Item *item, const int shelfIndex, const int compartmentIndex);
@@ -20,7 +22,7 @@ class Library
                 Shelf &operator[](int index);
 
         private:
-                Shelf shelves[10];
+                std::vector<Shelf> shelves;
                 std::vector<CheckedOutItem> checkedOutItems;
 };
 
