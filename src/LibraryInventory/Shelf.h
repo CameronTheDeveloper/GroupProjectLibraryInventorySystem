@@ -6,10 +6,8 @@
 
 class Shelf {
         public:
-                Compartment findCompartment(int index) const;
-
-                Compartment &operator[](int index);
-                friend std::ostream& operator<<(std::ostream &os, Shelf& shelf);
+                Compartment &operator[](size_t index);
+                friend std::ostream& operator<<(std::ostream& os, const Shelf& shelf);
 
         private:
                 Compartment compartments[15];
