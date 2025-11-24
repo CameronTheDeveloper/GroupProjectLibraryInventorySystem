@@ -103,7 +103,7 @@ void Library::checkIn(CheckedOutItem& checkedOutItem)
 
 Shelf& Library::operator[](int index)
 {
-        if (index < 0 || index >= 100)
+        if (index < 0 || index >= 10)
         {
                 throw ShelfNotFoundException("Shelf does not exist.");
         }
