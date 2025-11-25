@@ -67,7 +67,7 @@ void Library::swap(int itemOneShelfIndex, int itemOneCompIndex,
         }
         catch (const std::exception& e)
         {
-                std::cout << "One of the items do not exist.\n";
+                std::cout << "One or both of the items do not exist.\n";
                 return;
         }
 
@@ -86,7 +86,7 @@ CheckedOutItem& Library::checkOut(const int shelfIndex, const int compartmentInd
         }
         catch (std::exception e)
         {
-                std::cout << "Error checking out item.";
+                std::cout << "Error checking out item.\n";
                 return checkedOutItem;
         }
         checkedOutItem.setOriginalShelf(shelfIndex);

@@ -14,6 +14,8 @@ int main() {
 
         Library library(5);
 
+        // Ensuring Functionality
+
         Book *book1 = new Book();
         book1->setName("Book A");
         book1->setDescription("Book A Description");
@@ -23,14 +25,13 @@ int main() {
         book1->setCopyrightDate("2009");
         library.addItem(book1, 0, 1);
 
-        Book *book2 = new Book();
-        book2->setName("Book B");
-        book2->setDescription("Book B Description");
-        book2->setId(2);
-        book2->setTitle("Hunger Games");
-        book2->setAuthor("Suzanne Collins");
-        book2->setCopyrightDate("2008");
-        library.addItem(book2, 2, 0);
+        Magazine *magazine1 = new Magazine();
+        magazine1->setName("Book B");
+        magazine1->setDescription("Book B Description");
+        magazine1->setId(2);
+        magazine1->setEdition("3rd");
+        magazine1->setTitleOfMain("New York Times");
+        library.addItem(magazine1, 2, 0);
 
         library.printStorage();
 
@@ -50,6 +51,14 @@ int main() {
         library.swap(0, 1, 2, 0);
         library.printStorage();
         library.printCheckedOut();
+
+
+        // Failing Functionality
+        library.addItem(book1, 20, 3);
+        library.addItem(book1, 3, 20);
+        CheckedOutItem &checkedOut2 = library.checkOut(3, 3);
+        library.swap(0, 1, 3, 3);
+        library.swap(4, 4, 3, 3);
 
         return 0;
 }
