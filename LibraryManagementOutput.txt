@@ -1,0 +1,401 @@
+----------
+Library
+----------
+
+Shelf 1:
+Compartment 1: Empty
+Compartment 2:
+Title: Maze Runner
+Author: James Dashner
+Copyright Date: 2009
+
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 2:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 3:
+Compartment 1:
+Edition: 3rd
+Title of Magazine: New York Times
+
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 4:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 5:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+----------
+Library
+----------
+
+Shelf 1:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 2:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 3:
+Compartment 1:
+Edition: 3rd
+Title of Magazine: New York Times
+
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 4:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 5:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+----------
+Checked Out
+----------
+
+Item: Book A, Description: Book A Description, Owner: Jaden, Due: 11/25/2025
+----------
+Library
+----------
+
+Shelf 1:
+Compartment 1: Empty
+Compartment 2:
+Title: Maze Runner
+Author: James Dashner
+Copyright Date: 2009
+
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 2:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 3:
+Compartment 1:
+Edition: 3rd
+Title of Magazine: New York Times
+
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 4:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 5:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+----------
+Checked Out
+----------
+
+----------
+Library
+----------
+
+Shelf 1:
+Compartment 1: Empty
+Compartment 2:
+Edition: 3rd
+Title of Magazine: New York Times
+
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 2:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 3:
+Compartment 1:
+Title: Maze Runner
+Author: James Dashner
+Copyright Date: 2009
+
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 4:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+Shelf 5:
+Compartment 1: Empty
+Compartment 2: Empty
+Compartment 3: Empty
+Compartment 4: Empty
+Compartment 5: Empty
+Compartment 6: Empty
+Compartment 7: Empty
+Compartment 8: Empty
+Compartment 9: Empty
+Compartment 10: Empty
+Compartment 11: Empty
+Compartment 12: Empty
+Compartment 13: Empty
+Compartment 14: Empty
+Compartment 15: Empty
+
+----------
+Checked Out
+----------
+
+Compartment Does Not Exist.
+Compartment Does Not Exist.
+Error checking out item.
+One or both of the items do not exist.
+One or both of the items do not exist.
+
+C:\Users\Jared\Desktop\cpp\GroupProjectLibraryInventorySystem\build\Debug\execBinary.exe (process 19200) exited with code 0 (0x0).
+Press any key to close this window . . .

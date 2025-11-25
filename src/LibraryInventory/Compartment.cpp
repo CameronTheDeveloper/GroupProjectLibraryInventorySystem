@@ -6,6 +6,8 @@ using namespace std;
 Item *Compartment::getStoredItem() const { return storedItem; }
 bool Compartment::getHasOwner() const { return hasOwner; }
 
+Compartment::Compartment() : hasOwner(false), storedItem(nullptr) {}
+
 // Setters
 void Compartment::addItem(Item *item) {
         if (hasOwner == false) {
@@ -14,6 +16,10 @@ void Compartment::addItem(Item *item) {
                 throw CompartmentEmptyException(
                     "Compartment already has an owner");
         }
+}
+
+void Compartment::addItem(CheckedOutItem& checkedOutItem) {
+        storedItem = checkedOutItem.getItem();
 }
 
 Item *Compartment::removeItem() {

@@ -9,12 +9,16 @@
 class Library
 {
         public:
+                Library();
+                Library(int size);
                 void printCheckedOut() const;
                 void printStorage() const;
-                void addShelf(const Shelf &shelf);
                 void addItem(Item *item, const int shelfIndex, const int compartmentIndex);
                 void swap(int itemOneShelfIndex, int itemOneCompIndex,
                           int itemTwoShelfIndex, int itemTwoCompIndex);
+                CheckedOutItem &checkOut(const int shelfIndex,
+                                         const int compartmentIndex);
+                void checkIn(CheckedOutItem &checkedOutItem);
                 Shelf &operator[](int index);
 
         private:

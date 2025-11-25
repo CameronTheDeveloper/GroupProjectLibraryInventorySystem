@@ -1,7 +1,18 @@
 #include "Library.h"
 
+Library::Library()
+{
+       shelves.resize(15);
+}
+
+Library::Library(int size)
+{
+        shelves.resize(size);
+}
+
 void Library::printCheckedOut() const
 {
+        std::cout << "----------\nChecked Out\n----------\n\n";
         for (const CheckedOutItem& item : checkedOutItems)
         {
                 std::cout << item << "\n";
@@ -10,15 +21,11 @@ void Library::printCheckedOut() const
 
 void Library::printStorage() const
 {
-        for (const Shelf& shelf : shelves)
+        std::cout << "----------\nLibrary\n----------\n\n";
+        for (int i = 0; i < shelves.size(); ++i)
         {
-                std::cout << shelf << "\n";
+                std::cout << "Shelf " << (i + 1) << ":\n" << shelves[i] << "\n";
         }
-}
-
-void Library::addShelf(const Shelf& shelf)
-{
-        shelves.emplace_back(shelf);
 }
 
 void Library::addItem(Item *item, const int shelfIndex, const int compartmentIndex)
@@ -60,7 +67,7 @@ void Library::swap(int itemOneShelfIndex, int itemOneCompIndex,
         }
         catch (const std::exception& e)
         {
-                std::cout << "One of the items do not exist.\n";
+                std::cout << "One or both of the items do not exist.\n";
                 return;
         }
 
@@ -71,9 +78,42 @@ void Library::swap(int itemOneShelfIndex, int itemOneCompIndex,
         compartment2->addItem(item1);
 }
 
+CheckedOutItem& Library::checkOut(const int shelfIndex, const int compartmentIndex)
+{
+        CheckedOutItem checkedOutItem;
+        try {
+                checkedOutItem.setItem((*this)[shelfIndex][compartmentIndex].removeItem());
+        }
+        catch (std::exception e)
+        {
+                std::cout << "Error checking out item.\n";
+                return checkedOutItem;
+        }
+        checkedOutItem.setOriginalShelf(shelfIndex);
+        checkedOutItem.setOriginalCompartment(compartmentIndex);
+        checkedOutItems.push_back(checkedOutItem);
+        return checkedOutItems[checkedOutItems.size()-1];
+}
+
+void Library::checkIn(CheckedOutItem& checkedOutItem)
+{
+        int shelfIndex  = checkedOutItem.getOriginalShelf();
+        int compartmentIndex = checkedOutItem.getOriginalCompartment();
+
+        (*this)[shelfIndex][compartmentIndex].addItem(checkedOutItem);
+        for (int i = 0; i < checkedOutItems.size(); ++i)
+        {
+                if (checkedOutItems[i].getItem()->getId() == checkedOutItem.getItem()->getId())
+                {
+                        checkedOutItems.erase(checkedOutItems.begin() + i);
+                        return;
+                }
+        }
+}
+
 Shelf& Library::operator[](int index)
 {
-        if (index < 0 || index >= shelves.size())
+        if (index < 0 || index >= 10)
         {
                 throw ShelfNotFoundException("Shelf does not exist.");
         }
