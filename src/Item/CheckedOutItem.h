@@ -6,20 +6,20 @@
 class CheckedOutItem {
         public:
                 // Getters
-                Item& getItem() const;
+                Item* getItem() const;
                 int getOriginalShelf() const;
                 int getOriginalCompartment() const;
                 std::string getNameOfOwner() const;
                 std::string getDueDate() const;
 
                 // Setters
-                void setItem(const Item &newItem);
+                void setItem(Item *newItem);
                 void setOriginalShelf(int shelf);
                 void setOriginalCompartment(int compartment);
                 void setNameOfOwner(const std::string &owner);
                 void setDueDate(const std::string &date);
 
-                friend std::ostream &operator<<(std::ostream &os, CheckedOutItem& checkedOutItem);
+                friend std::ostream &operator<<(std::ostream &os, const CheckedOutItem& checkedOutItem);
 
         private:
                 Item *item;
